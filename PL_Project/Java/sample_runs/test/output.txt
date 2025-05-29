@@ -1,0 +1,65 @@
+=== Input Source Code ===
+public class Test {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = 5.5;
+        char c = 'y';
+        // Java comment
+        if (a > b) {
+            System.out.println("Java test");
+        }
+    }
+}
+
+
+=== Lexical Tokenization Output ===
+KEYWORD                   : public
+KEYWORD                   : class
+IDENTIFIER                : Test
+LBRACE                    : {
+KEYWORD                   : public
+KEYWORD                   : static
+IDENTIFIER                : void
+IDENTIFIER                : main
+LPAREN                    : (
+IDENTIFIER                : String
+LBRACKET                  : [
+RBRACKET                  : ]
+IDENTIFIER                : args
+RPAREN                    : )
+LBRACE                    : {
+IDENTIFIER                : int
+IDENTIFIER                : a
+ASSIGNMENT                : =
+INTEGER                   : 10
+SEMICOLON                 : ;
+IDENTIFIER                : double
+IDENTIFIER                : b
+ASSIGNMENT                : =
+FLOAT                     : 5.5
+SEMICOLON                 : ;
+IDENTIFIER                : char
+IDENTIFIER                : c
+ASSIGNMENT                : =
+CHAR                      : 'y'
+SEMICOLON                 : ;
+COMMENT                   : // Java comment
+IDENTIFIER                : if
+LPAREN                    : (
+IDENTIFIER                : a
+REL_OP                    : >
+IDENTIFIER                : b
+RPAREN                    : )
+LBRACE                    : {
+IDENTIFIER                : System
+DOT                       : .
+IDENTIFIER                : out
+DOT                       : .
+IDENTIFIER                : println
+LPAREN                    : (
+STRING                    : "Java test"
+RPAREN                    : )
+SEMICOLON                 : ;
+RBRACE                    : }
+RBRACE                    : }
+RBRACE                    : }

@@ -1,0 +1,55 @@
+=== Input Source Code ===
+#include <stdio.h>
+
+int main() {
+    int a = 1;
+    float b = 3.14;
+    char c = 'x';
+    // This is a comment
+    if (a < b) {
+        printf("C test\n");
+    }
+    return 0;
+}
+
+
+=== Lexical Tokenization Output ===
+PREPROCESSOR_DIRECTIVE    : #include <stdio.h>
+KEYWORD                   : int
+IDENTIFIER                : main
+LPAREN                    : (
+RPAREN                    : )
+LBRACE                    : {
+KEYWORD                   : int
+IDENTIFIER                : a
+ASSIGNMENT                : =
+INTEGER                   : 1
+SEMICOLON                 : ;
+IDENTIFIER                : float
+IDENTIFIER                : b
+ASSIGNMENT                : =
+FLOAT                     : 3.14
+SEMICOLON                 : ;
+IDENTIFIER                : char
+IDENTIFIER                : c
+ASSIGNMENT                : =
+CHAR                      : 'x'
+SEMICOLON                 : ;
+COMMENT                   : // This is a comment
+KEYWORD                   : if
+LPAREN                    : (
+IDENTIFIER                : a
+REL_OP                    : <
+IDENTIFIER                : b
+RPAREN                    : )
+LBRACE                    : {
+IDENTIFIER                : printf
+LPAREN                    : (
+STRING                    : "C test\n"
+RPAREN                    : )
+SEMICOLON                 : ;
+RBRACE                    : }
+KEYWORD                   : return
+INTEGER                   : 0
+SEMICOLON                 : ;
+RBRACE                    : }

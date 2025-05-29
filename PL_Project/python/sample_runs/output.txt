@@ -1,0 +1,36 @@
+=== Input Source Code ===
+# Python comment
+def greet(name):
+    print("Hello, " + name)
+
+if __name__ == "__main__":
+    x = 3.14
+    greet("Python")
+
+
+=== Lexical Tokenization Output ===
+COMMENT              : # Python comment
+KEYWORD              : def
+IDENTIFIER           : greet
+BRACKET              : (
+IDENTIFIER           : name
+BRACKET              : )
+PUNCT                : :
+IDENTIFIER           : print
+BRACKET              : (
+STRING               : "Hello, "
+ARITH_OP             : +
+IDENTIFIER           : name
+BRACKET              : )
+KEYWORD              : if
+IDENTIFIER           : __name__
+REL_OP               : ==
+STRING               : "__main__"
+PUNCT                : :
+IDENTIFIER           : x
+ASSIGNMENT           : =
+FLOAT                : 3.14
+IDENTIFIER           : greet
+BRACKET              : (
+STRING               : "Python"
+BRACKET              : )

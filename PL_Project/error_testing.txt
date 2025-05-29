@@ -1,0 +1,34 @@
+c code:
+
+int main() {
+    int a = 10.5.3;     // Invalid number format
+    char c = 'abc;      // Unterminated char literal
+    float f = 12..34;   // Invalid float
+    @int b = 5;        // Illegal symbol '@'
+    printf("Hello World\n)  // Missing closing quote
+    return 0
+}
+
+
+java code:
+
+public class Test {
+    public static void main(String[] args) {
+        int num = 12.3.4;           // Invalid number format
+        char ch = 'ab;              // Unterminated char literal
+        double d = 12..34;          // Invalid float
+        @String str = "Hello";      // Illegal symbol '@'
+        System.out.println("Test);  // Missing closing quote
+        return                    // Missing semicolon
+    }
+}
+
+
+python code:
+
+a = 12.3.4          # Invalid number format
+b = "Hello          # Unterminated string
+c = 'abc            # Unterminated string
+@var = 10           # Illegal symbol '@'
+def func()
+    print("Hello")   # Missing colon
